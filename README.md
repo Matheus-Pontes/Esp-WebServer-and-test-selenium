@@ -1,4 +1,4 @@
-## Esp-WebServer-and-test-selenium
+# Esp-WebServer-and-test-selenium
 
 layout
 
@@ -10,7 +10,7 @@ layout
 - Sistema integrado com de uma placa chamada ESP8266, onde ela consegui fazer a criação de um servirdor web, a partir do Wi-Fi local (LOCAL IP). 
 - O python com o selenium vai acessar o servidor web, gerado pela placa, que no caso será uma página HTML, onde tem dois botões um para ligar e desligar. Assim, o python está para automatizar esse processo ( ligar/desligar led ).
 
-### Instalações necessárias
+## :gear: Instalações necessárias
 - Python:
    - [Download Python 3](https://python.org)
    - Bibliotecas utilizadas:
