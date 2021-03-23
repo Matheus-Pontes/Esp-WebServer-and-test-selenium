@@ -23,7 +23,7 @@ class Blink:
         try:
             # Vai tentar achar um elemento que aparece depois na página
             field1 = WebDriverWait(self.driver, 3).until(
-                EC.visibility_of_element_located((By.XPATH, '/html/body/div/a[1]'))
+                EC.visibility_of_element_located((By.XPATH, '/html/body/main/div/a[1]'))
             )   
             field1.click()
 
@@ -33,7 +33,7 @@ class Blink:
 
                 # Vai tentar achar o elemento que aparece depois na página
                 field2 = WebDriverWait(self.driver, 3).until(
-                    EC.visibility_of_element_located((By.XPATH, '/html/body/div/a[2]'))
+                    EC.visibility_of_element_located((By.XPATH, '/html/body/main/div/a[2]'))
                 )
                 field2.click()
                 # houve o click desliga o led 

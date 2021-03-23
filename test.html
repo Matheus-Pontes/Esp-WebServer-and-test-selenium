@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Hello!</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+
+            background-color: #011640;
+        }
+
+        header{
+            padding:2rem;
+            text-align:center;
+            color:#fff;
+        }
+        main{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div {
+            padding:4rem;
+            
+            background: #fff;
+            border-radius: 8px;
+            max-width:800px;
+            display:flex;
+            justify-content: center;
+            box-shadow: 1px 1px 11px #fff;
+        }
+        main div a {
+            text-decoration: none;
+            color:#fff;
+            padding:1rem;
+            margin: 5px;
+        }
+        a#button1 {
+            padding:1.8rem 2.0rem;
+            background-color:#00AE32;
+            border-radius: 8px;
+        }
+        a#button2 {
+            padding:1.8rem 2.0rem;
+            background-color:#F20544;
+            
+            border-radius: 8px;
+        }
+        a#button1:hover{
+            background-color:#03A66A;
+        }
+        a#button2:hover{
+            background-color: #A6032F;
+        }
+        footer{
+            padding:4rem;
+            text-align: center;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hello, World!-ESP8266</h1>
+        <h2>Testing Led</h2>
+    </header>
+    <main>
+        <div>
+            <a href=\"/led1on\" id='button1' />LIGAR</a>
+            <a href=\"/led1off\" id='button2'>DESLIGAR</a>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Criado por Matheus Francisco de Pontes</h3>
+    </footer>
+</body>
+</html>
