@@ -7,9 +7,9 @@ IPAddress ip();
 IPAddress gateway();
 IPAddress subnet();
 
-
-const char* ssid = "sua rede";
-const char* password = "sua rede";
+// Name your internet and passaword
+const char* ssid = "********";
+const char* password = "*****";
 
 ESP8266WebServer server(80);
 
@@ -86,13 +86,13 @@ String SendHTML(){
                 "body{width: 100vw; height: 100vh; background-color: #011640;}"
                 "header{color: #fff; padding: 2rem; text-align: center;}"
                 "main{display:flex; align-items: center; justify-content:center;}"
-                "div{padding: 4rem; background-color: #fff; border-radius: 8px; max-width: 800px; display:flex; justify-content: center; box-shadow: 1px 1px 11px #fff;}"
-                "main div a {text-decoration: none; color: #fff; padding: 1rem;
-                margin: 5px;}"
+                "section{padding: 4rem; background-color: #fff; border-radius: 8px; max-width: 800px; display:flex; justify-content: center; box-shadow: 1px 1px 11px #fff;}"
+                "main section a {text-decoration: none; color: #fff; padding: 1rem; margin: 5px;}"
                 "a#button1{padding:1.8rem 2rem; background:#00ae32; border-radius: 8px;}"
                 "a#button2{padding: 1.8rem 2rem; background: #f20544; border-radius: 8px;}"
                 "a#button1:hover {background: #03a66a;}"
                 "a#button2:hover {background: #a6032f;}"
+                "footer { text-align:center; padding: 2rem; color: #fff; }"
                 "</style>"
                 "</head>"
                 "<body>"
@@ -101,10 +101,10 @@ String SendHTML(){
                 "<h2>Testing Led</h2>"
                 "</header>"
                 "<main>"
-                "<div>"
-                "<a href=\"/led1on\" class='button1'/>LIGAR</a>\n"
-                "<a href=\"/led1off\" class='button2'>DESLIGAR</a>"
-                "</div>"
+                "<section>"
+                "<a href=\"/led1on\" id='button1'/>LIGAR</a>\n"
+                "<a href=\"/led1off\" id='button2'>DESLIGAR</a>"
+                "</section>"
                 "</main>"
                 "<footer>"
                 "<h3>Criado por Matheus Francisco de Pontes</h3>"
